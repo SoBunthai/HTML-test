@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Application Form</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .form-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 30px 40px;
+    width: 500px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .intro {
+    font-size: 13px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .form-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .form-row label {
+    width: 200px;
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  .form-row .field {
+    flex: 1;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 70px;
+  }
+  .radio-group label,
+  .checkbox-group label {
+    width: auto;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+    padding-top: 0;
+  }
+  .radio-group input,
+  .checkbox-group input {
+    margin-right: 6px;
+  }
+  .required {
+    color: #c00;
+  }
+  .submit-row {
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    padding: 8px 24px;
+    font-size: 14px;
+    background: #2d6cdf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #1f56b8;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h1>APPLICATION FORM</h1>
+  <p class="intro">
+    Thank you for your interest in working with us. Please check below for available job
+    opportunities that meet your criteria and send your application by filling out the Job Application Form.
+  </p>
+
+  <form id="applicationForm">
+
+    <div class="form-row">
+      <label for="fullname"><span class="required">*</span> Full Name:</label>
+      <div class="field">
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="email"><span class="required">*</span> Email:</label>
+      <div class="field">
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="age"><span class="required">*</span> Age:</label>
+      <div class="field">
+        <input type="number" id="age" name="age" placeholder="Age" min="1" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="role">Which option best describes your current role?</label>
+      <div class="field">
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="freelancer">Freelancer</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label><span class="required">*</span> Would you like to list references?</label>
+      <div class="field radio-group">
+        <label><input type="radio" name="references" value="yes" required> Yes</label>
+        <label><input type="radio" name="references" value="no"> No</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="position">Which position would you like to apply for?</label>
+      <div class="field">
+        <select id="position" name="position">
+          <option value="">Select an option</option>
+          <option value="frontend">Frontend Developer</option>
+          <option value="backend">Backend Developer</option>
+          <option value="fullstack">Full Stack Developer</option>
+          <option value="designer">UI/UX Designer</option>
+          <option value="qa">QA Engineer</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label>Which programming languages do you know?</label>
+      <div class="field checkbox-group">
+        <label><input type="checkbox" name="languages" value="Java"> Java</label>
+        <label><input type="checkbox" name="languages" value="Python"> Python</label>
+        <label><input type="checkbox" name="languages" value="JavaScript"> JavaScript</label>
+        <label><input type="checkbox" name="languages" value="C++"> C++</label>
+        <label><input type="checkbox" name="languages" value="Swift"> Swift</label>
+        <label><input type="checkbox" name="languages" value="Ruby"> Ruby</label>
+        <label><input type="checkbox" name="languages" value=".NET"> .NET</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="comments">Any Comments?</label>
+      <div class="field">
+        <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+</body>
+</html>
